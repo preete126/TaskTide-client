@@ -6,9 +6,10 @@
     <li class="">
       <ProjectOutlined />
     </li>
-    <li class="">
+    <li class="" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
       <PlusOutlined />
     </li>
+    <create-project></create-project>
     <li class="">
       <MessageOutlined />
     </li>
@@ -26,6 +27,7 @@ import {
   MessageOutlined,
   UserOutlined,
 } from "@ant-design/icons-vue";
+import CreateProject from "./createProject.vue";
 export default defineComponent({
   components: {
     AppstoreOutlined,
@@ -33,6 +35,7 @@ export default defineComponent({
     PlusOutlined,
     MessageOutlined,
     UserOutlined,
+    CreateProject,
   },
 });
 </script>

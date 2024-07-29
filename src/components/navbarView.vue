@@ -14,7 +14,7 @@
             <span class="fs-sm-5 fw-bold text-white">{{user?.username}}</span>
             <small class="fs-6 text-secondary"
               >Hi {{user?.username}},
-              <span class="d-none d-sm-inline">Good morning!</span></small
+              <span class="d-none d-sm-inline">Welcome!</span></small
             >
           </div>
         </div>

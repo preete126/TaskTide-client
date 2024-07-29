@@ -1,5 +1,6 @@
 import './assets/main.scss'
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
+import "bootstrap/dist/js/bootstrap.bundle.min"
 import { createApp } from 'vue'
 import App from './App.vue'
 import $AntD from "@ant-design/icons-vue"
