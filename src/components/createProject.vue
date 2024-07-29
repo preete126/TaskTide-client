@@ -29,16 +29,16 @@
         </div>
         <div class="mt-4">
           <label for="layout"><h5 class="fw-bold">Layout</h5></label>
-          <div class="d-flex gap-3 mt-2 layout">
+          <div class="d-flex flex-column flex-sm-row gap-3 mt-2 layout">
             <button
               class="btn btn form-control rounded-3"
             >
-              <span>List</span>
+              <span class="d-flex align-items-center gap-2 justify-content-center fw-bold"><FileAddOutlined/> <span>List</span></span>
             </button>
             <button
               class="btn btn form-control rounded-3"
             >
-              <span>List</span>
+              <span>Board</span>
             </button>
           </div>
         </div>
@@ -72,7 +72,7 @@
             </ul>
           </div>
         </div>
-        <button class="btn form-control btn-outline-success mt-4">Add Members</button>
+        <button class="btn form-control btn-outline-success mt-4"><span class="d-flex align-items-center gap-2 justify-content-center fw-bold small"><FileAddOutlined/> <span>Add Member</span></span></button>
         <button class="btn form-control btn-success mt-4">Create Project</button>
       </div>
     </div>
@@ -81,10 +81,11 @@
 
 <script>
 import { defineComponent } from "vue";
-import { UserSwitchOutlined } from "@ant-design/icons-vue";
+import { UserSwitchOutlined, FileAddOutlined } from "@ant-design/icons-vue";
 export default defineComponent({
   components: {
     UserSwitchOutlined,
+    FileAddOutlined
   },
   data() {
     return {
@@ -103,7 +104,7 @@ export default defineComponent({
 }
 .adjust {
   position: absolute;
-  top: 8%;
+  bottom: 0%;
   background-color: white;
   width: 100%;
   padding: 20px;
@@ -118,6 +119,14 @@ export default defineComponent({
 }
 .border-primary, .btn-outline-success{
     border: 1px solid #7980ff !important;
+}
+.btn-outline-success{
+    color: #7980ff !important;
+}
+.layout > .btn:nth-child(1){
+    color: #7980ff !important;
+    background-color: #e7e8f7;
+    border: 1px solid #7980ff;
 }
 .btn-outline-success:hover, .btn-success{
     background-color: #7980ff !important;
